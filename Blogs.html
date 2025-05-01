@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRIDGE | Blogs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Blogs_styles.css">
+</head>
+
+<body>
+  <header>
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <div class="logo">BRIDGE</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+    <div class="header-buttons">
+      <a href="TechNews.html"><button class="header-btn">Tech News</button></a>
+      <a href="WriteBlog.html"><button class="header-btn" >Write</button> </a>
+      <div class="profile-dropdown">
+        <img src="images/piyush.jpg" alt="Profile" class="profile-pic">
+        <ul class="dropdown-menu">
+          <li><a href="Blogs.html">Home</a></li>
+          <li><a href="#">View Profile</a></li>
+          <li><a href="#">Write Blog</a></li>
+          <li><a href="#">Read Blog</a></li>
+          <li><a href="#">Favorites</a></li>
+          <li><a href="#">Followed</a></li>
+          <li><a href="index.html">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Technology</a>
+    <a href="#">Science</a>
+    <a href="#">AI</a>
+    <a href="#">Space</a>
+    <a href="#">Design</a>
+  </nav>
+
+  <main class="blogs-container">
+    <div class="blog-card">
+      <a href="blog_1.html" class="blog-title"><h3>The Future of AI</h3></a>
+      <div class="blog-content">Exploring what artificial intelligence holds for the next decade...</div>
+      <div class="blog-actions">
+        <div class="left-actions">
+          <div class="action-div">
+            <img src="icons/comment.png" alt="Comment">
+          </div>
+        </div>
+        <div class="right-actions">
+          <div class="action-div">
+            <img src="icons/like.png" alt="Like">
+          </div>
+          <div class="action-div">
+            <img src="icons/favourite_list.png" alt="Favourite">
+          </div>
+          <div class="action-div">
+            <img src="icons/share.png" alt="Share">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate the above blog-card for each post -->
+  </main>
+
+  <footer>
+    &copy; 2025 BRIDGE – Connect with Tech & World
+  </footer>
+</body>
+
+</html>

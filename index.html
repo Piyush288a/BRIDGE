@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BRIDGE - Connect with Tech & World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="BRIDGE Logo" class="logo-img">
+        <span class="logo-text">BRIDGE</span>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="#section1">My Story</a>
+        <a href="#section4">Tech News</a>
+        <a href="signin.html">Sign In</a>
+        <a href="SignUp.html" class="btn-primary">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>BRIDGE</h1>
+      <p>Connect with Tech & World</p>
+      <a href="#section1" class="btn-primary">Explore More</a>
+    </div>
+  </section>
+
+  <!-- Section 1: Publish Passion -->
+  <section class="section light" id="section1">
+    <div class="section-inner">
+      <h2>Publish Your Passion</h2>
+      <p>Share your ideas, experiences, and creativity with the world. Whether it's technology, lifestyle, science, or art — BRIDGE lets you choose your interests and express yourself freely.</p>
+      <a href="SignUp.html" class="btn-secondary">Select Interests</a>
+    </div>
+  </section>
+
+  <!-- Section 2: Why Bridge -->
+  <section class="section dark" id="section2">
+    <div class="section-inner">
+      <h2>Why Choose BRIDGE?</h2>
+      <p>BRIDGE is more than just a blogging platform. It's a vibrant space where passion meets purpose. Create, connect, and grow with millions. At BRIDGE, we believe every voice matters — including yours.</p>
+      <a href="About.html" class="btn-secondary">Learn About BRIDGE</a>
+    </div>
+  </section>
+
+  <!-- Section 3: Featured Blogs -->
+  <section class="section light" id="section3">
+    <div class="section-inner">
+      <h2>Featured Blogs</h2>
+      <p>Catch a glimpse of what's trending. From tech breakthroughs to creative masterpieces — dive into inspiring stories crafted by brilliant minds.</p>
+      <div class="card-container">
+        <div class="card">
+          <h3>The Future of AI</h3>
+          <p>Explore how Artificial Intelligence is shaping tomorrow's world.</p>
+        </div>
+        <div class="card">
+          <h3>Digital Nomad Life</h3>
+          <p>Learn the secrets of working remotely and traveling endlessly.</p>
+        </div>
+        <div class="card">
+          <h3>Space Innovations</h3>
+          <p>Discover breakthroughs taking us closer to the stars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Trending Tech News -->
+  <section class="section dark" id="section4">
+    <div class="section-inner">
+      <h2>Trending Tech News</h2>
+      <div class="news-container">
+        <div class="news-item">
+          <h4>Apple Unveils VisionOS 2</h4>
+          <p>Apple introduces next-gen mixed reality system for everyday users.</p>
+        </div>
+        <div class="news-item">
+          <h4>Quantum Computing Milestone</h4>
+          <p>Scientists achieve a huge leap in quantum speed supremacy tests.</p>
+        </div>
+        <div class="news-item">
+          <h4>Electric Cars Hit New High</h4>
+          <p>Global EV sales surge 45%, breaking all previous records this year.</p>
+        </div>
+        <div class="news-item">
+          <h4>Electric Cars Hit New High</h4>
+          <p>Global EV sales surge 45%, breaking all previous records this year.</p>
+        </div>
+      </div>
+      <a href="TechNews.html" class="btn-primary">Read More</a>
+    </div>
+  </section>
+
+  <!-- Section 5: Join Others -->
+  <section class="section light" id="section5">
+    <div class="section-inner">
+      <h2>Join Millions of Creators</h2>
+      <p>Become a part of the BRIDGE community. Start your blogging journey today and let the world hear your story.</p>
+      <a href="SignIn.html" class="btn-primary">Create Your Blog</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="images/logo.jpeg" alt="BRIDGE Logo" class="footer-logo">
+  
+      <p class="footer-tagline">
+        BRIDGE — Connect with the latest tech trends, share your stories, and explore new ideas.
+      </p>
+  
+      <nav class="footer-links">
+        <a href="About.html">About</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="#explore">Explore</a>
+        <a href="#terms">Terms & Conditions</a>
+      </nav>
+  
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter--v1.png" alt="Twitter"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram"></a>
+      </div>
+  
+      <p class="footer-copyright">
+        © 2025 BRIDGE. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  
+<script>
+  // Fade-in sections on scroll
+  const sections = document.querySelectorAll('.section-inner');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>

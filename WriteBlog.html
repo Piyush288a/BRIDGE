@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Write Blog | BRIDGE</title>
+  <link rel="stylesheet" href="Blogs_styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <div class="logo"><a href="blogs.html" style="color:white; text-decoration:none;">BRIDGE</a></div>
+    </div>
+    <div class="header-buttons">
+      <a href="TechNews.html"><button class="header-btn">Tech News</button></a>
+      <a href="WriteBlog.html"><button class="header-btn">Write</button></a>
+      <div class="profile-dropdown">
+        <img src="images/piyush.jpg" alt="Profile" class="profile-pic">
+        <ul class="dropdown-menu">
+          <li><a href="Blogs.html">Home</a></li>
+          <li><a href="#">View Profile</a></li>
+          <li><a href="#">Write Blog</a></li>
+          <li><a href="#">Read Blog</a></li>
+          <li><a href="#">Favorites</a></li>
+          <li><a href="#">Followed</a></li>
+          <li><a href="index.html">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </header>
+  <nav>
+    <a href="#">Technology</a>
+    <a href="#">Science</a>
+    <a href="#">AI</a>
+    <a href="#">Space</a>
+    <a href="#">Design</a>
+  </nav>
+
+  <main class="blogs-container">
+    <div class="blog-card" style="grid-column: 1 / -1;">
+      <div class="blog-title">Write Your Blog</div>
+      <form>
+        <label>Title:</label><br>
+        <input type="text" style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+        <label>Content:</label><br>
+        <textarea style="width: 100%; height: 200px; padding: 10px;"></textarea><br><br>
+        <button class="header-btn" type="submit">Publish</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 BRIDGE – Connect with Tech & World
+  </footer>
+</body>
+</html>

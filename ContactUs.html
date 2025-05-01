@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | BRIDGE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Blurred Background */
+    .background-blur {
+      background-image: url('images/header_img.png');
+      background-size: cover;
+      background-position: center;
+      filter: blur(5px);
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    body {
+      background-color: black;
+    }
+
+    /* Center Form Box */
+    .contact-box {
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      margin: 5% auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-box p {
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      background-color: #6200ee;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background-color: black;
+    }
+
+    .contact-info {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    .contact-info a {
+      color: #6200ee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Image Container -->
+  <div class="background-blur"></div>
+
+  <!-- Centered Contact Form Box -->
+  <div class="contact-box">
+    <h2>Contact <div class="logo">BRIDGE</div></h2>
+    <p>Have questions or feedback? Send us a message using the form below.</p>
+    
+    <form action="#" method="POST">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="contact-info">
+      Prefer email? Reach us at <a href="mailto:support@bridge.com">support@bridge.com</a>
+    </p>
+  </div>
+
+</body>
+</html>
