@@ -25,11 +25,6 @@
         z-index: -1;
     }
 
-    .logo {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 2rem;
-    }
-
     body {
         background-color: black;
     }
@@ -43,6 +38,12 @@
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         text-align: center;
+    }
+
+    .logo {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .interest-box h3 {
@@ -63,18 +64,22 @@
         gap: 0.5rem;
     }
 
-    .tag {
+    .tag-input {
+        display: none;
+    }
+
+    .tag-label {
         background: #eee;
         color: #333;
         padding: 0.6rem 1rem;
         border-radius: 30px;
         font-size: 0.9rem;
         cursor: pointer;
-        user-select: none;
-        transition: all 0.2s ease;
+        transition: 0.2s;
+        display: inline-block;
     }
 
-    .tag.selected {
+    .tag-input:checked + .tag-label {
         background-color: #6200ee;
         color: white;
     }
@@ -90,24 +95,19 @@
         width: 100%;
         max-width: 300px;
         padding: 0.8rem;
-        margin: 1.5rem auto 0;
+        margin-top: 1.5rem;
         background-color: #6200ee;
         color: white;
         border: none;
         border-radius: 5px;
-        cursor: not-allowed;
-        opacity: 0.5;
+        cursor: pointer;
         transition: 0.3s;
+        font-size: 1rem;
     }
 
-    .continue-btn.enabled {
-        cursor: pointer;
-        opacity: 1;
-    }
     .continue-btn:hover {
         background-color: black;
     }
-
   </style>
 </head>
 <body>
@@ -115,46 +115,49 @@
   <div class="background-blur"></div>
 
   <div class="interest-box">
-    <h2><div class="logo">Bridge</div></h2>
+    <div class="logo">Bridge</div>
     <h3>What are you interested in?</h3>
-    <p>Choose three or more.</p>
+    <p>Choose three or more (just for display).</p>
 
-  <form action="Blogs.html" method="post">
-    <div class="tags-container" id="tags">
-      <!-- Example topics -->
-      <div class="tag">Programming</div>
-      <div class="tag">Data Science</div>
-      <div class="tag">Technology</div>
-      <div class="tag">Self Improvement</div>
-      <div class="tag">Writing</div>
-      <div class="tag">Relationships</div>
-      <div class="tag">Machine Learning</div>
-      <div class="tag">Productivity</div>
-      <div class="tag">Politics</div>
-      <div class="tag">Cryptocurrency</div>
-      <div class="tag">Psychology</div>
-      <div class="tag">Money</div>
-      <div class="tag">Business</div>
-      <div class="tag">Python</div>
-      <div class="tag">Health</div>
-      <div class="tag">Science</div>
-      <div class="tag">Mental Health</div>
-      <div class="tag">Life</div>
-      <div class="tag">Startup</div>
-      <div class="tag">Design</div>
-      <div class="tag">JavaScript</div>
-      <div class="tag">Artificial Intelligence</div>
-      <div class="tag">Culture</div>
-      <div class="tag">Software Engineering</div>
-      <div class="tag">Education</div>
-    </div>
+    <form action="Blogs.html">
+      <div class="tags-container">
+        <!-- Repeatable checkbox + label structure -->
+        <input type="checkbox" id="tag1" class="tag-input">
+        <label for="tag1" class="tag-label">Programming</label>
 
-    <div class="show-more">Show more</div>
+        <input type="checkbox" id="tag2" class="tag-input">
+        <label for="tag2" class="tag-label">Data Science</label>
 
-    <button action="Blogs.html" type="submit" class="continue-btn" id="continueBtn" disabled>Continue</button>
+        <input type="checkbox" id="tag3" class="tag-input">
+        <label for="tag3" class="tag-label">Technology</label>
+
+        <input type="checkbox" id="tag4" class="tag-input">
+        <label for="tag4" class="tag-label">Self Improvement</label>
+
+        <input type="checkbox" id="tag5" class="tag-input">
+        <label for="tag5" class="tag-label">Writing</label>
+
+        <input type="checkbox" id="tag6" class="tag-input">
+        <label for="tag6" class="tag-label">Machine Learning</label>
+
+        <input type="checkbox" id="tag7" class="tag-input">
+        <label for="tag7" class="tag-label">Productivity</label>
+
+        <input type="checkbox" id="tag8" class="tag-input">
+        <label for="tag8" class="tag-label">Psychology</label>
+
+        <input type="checkbox" id="tag9" class="tag-input">
+        <label for="tag9" class="tag-label">Startup</label>
+
+        <input type="checkbox" id="tag10" class="tag-input">
+        <label for="tag10" class="tag-label">Design</label>
+      </div>
+
+      <div class="show-more">Show more</div>
+
+      <button type="submit" class="continue-btn">Continue</button>
+    </form>
   </div>
-  </form>
-
 
 </body>
 </html>
