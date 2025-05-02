@@ -154,26 +154,7 @@
     <button action="Blogs.html" type="submit" class="continue-btn" id="continueBtn" disabled>Continue</button>
   </div>
   </form>
-<script>
-    const tags = document.querySelectorAll('.tag');
-    const continueBtn = document.getElementById('continueBtn');
-    let selectedCount = 0;
 
-    tags.forEach(tag => {
-        tag.addEventListener('click', () => {
-            tag.classList.toggle('selected');
-            selectedCount = document.querySelectorAll('.tag.selected').length;
-
-            if (selectedCount >= 3) {
-                continueBtn.disabled = false;
-                continueBtn.classList.add('enabled');
-            } else {
-                continueBtn.disabled = true;
-                continueBtn.classList.remove('enabled');
-            }
-        });
-    });
-  </script>
 
 </body>
 </html>
